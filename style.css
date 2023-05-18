@@ -1,0 +1,27 @@
+.Board{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    grid-template-rows: repeat(3, minmax(0, 1fr)); 
+    grid-gap: 5px; 
+    background-color: black; 
+    border: solid 5px; 
+}
+
+.Board div{
+    background-color: lightblue 
+  }
+
+body{
+    position: relative; 
+    margin: 0; 
+}
+body:before {
+    content: ''; 
+    display: block; 
+    padding-top: 100%; 
+}
