@@ -1,28 +1,29 @@
-/*.Board{ 
-  
-}*/
-
-.container{
-    display: flex; 
-    justify-content: center; 
-}
-
 .boardContainer{
-    display: flex;
+    /*display: flex;*/
+    padding-top: 10%;
     height: 100vh; 
     align-items: center; 
     justify-content: center; 
+    margin: auto; 
 }
 
 @media only screen and (max-width: 600px){
     .boardContainer{
-        width: 300px; 
+        width: 300px;  
+        height: 300px; 
+    }
+    .Board{
+        grid-template-rows: repeat(3, 100px); 
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 991px){
     .boardContainer{
         width: 400px; 
+        height: 400px; 
+    }
+    .Board{
+        grid-template-rows: repeat(3, calc(400px/3)); 
     }
 }
 
@@ -30,40 +31,42 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .boardContainer{
         width: 500px; 
+        height: 500px; 
+        
+    }
+    .Board{
+        grid-template-rows: repeat(3, calc(500px/3)); 
     }
 }
 
 @media only screen and (min-width: 1200px){
     .boardContainer{
-        width: 800px;  
+        width: 600px;  
+    }
+    .Board{
+        grid-template-rows: repeat(3, calc(600px/3)); 
     }
 }
 
 .Board{
-    flex: 1 0 auto; 
-    height: auto; 
-
-
     display: grid; 
     grid-template-columns: repeat(3, minmax(0, 1fr)); 
-    grid-template-rows: repeat(3, minmax(0, 1fr)); 
     grid-gap: 5px; 
     background-color: black; 
     border: solid 5px; 
-
-}
-
-.square:before{
-    content: ''; 
-    display: block; 
-    padding-top: 100%; 
 }
 
 .square{
-    background-color: green; 
+    background-color: turquoise; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 h1{
     text-align: center; 
 }
 
+p{
+    font-weight: bold; 
+}
