@@ -7,6 +7,10 @@
     margin: auto; 
 }
 
+.begin{
+    float: right; 
+}
+
 @media only screen and (max-width: 600px){
     .boardContainer{
         width: 300px;  
@@ -69,4 +73,14 @@ h1{
 
 p{
     font-weight: bold; 
+}
+
+.img{
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+}
+
+.reset{
+    padding-top: 10%; 
 }

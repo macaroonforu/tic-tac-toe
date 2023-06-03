@@ -9,27 +9,44 @@
 </head>
 <body>
     <h1>Cute Tic-Tac-Toe</h1>
-        <div class = "boardContainer">
-            <div class = "Board"></div>
-        </div>
+    <div class = "boardContainer">
+    </div>
         <div class = "selectionContainer">
+
             <h2>Player One: Choose your Icon: </h2>
-            <label for="icon-options">Choose an Icon: </label>
-            <select name="icon-options" id="icon-options">
+            <select name="icon-options" id="p1">
                 <option value = "rainbow">Rainbow</option>
                 <option value = "heart">Heart</option>
-                <option value = "puppy">Puppy</option>
-                <option value = "Kitty">Kitty</option>
+                <option value = "flower">Flower</option>
             </select>
+
+            <div class = "begin">
+                <button>Begin The Game</button>
+            </div>
+
             <h2>Player Two: Choose your Icon: </h2>
-            <label for="icon-options">Choose an Icon: </label>
-            <select name="icon-options" id="icon-options">
-                <option value = "rainbow">Rainbow</option>
-                <option value = "heart">Heart</option>
-                <option value = "puppy">Puppy</option>
-                <option value = "Kitty">Kitty</option>
+            <select name="icon-options" id="p2">
+                <option value = "cat">Kitty</option>
+                <option value = "cupcake">Cupcake</option>
             </select>
+
+       
+            
+
+
+            
         </div>
-        <script src = "main.js"></script>
+
+    </br>
+    <div class = "reset">
+        <button>Reset</button>
+    </div>
+
+    <div class = "result">
+        <h2></h2>
+        <p>(Hit Reset to Start a new game.)</p>
+    </div>
+
+    <script src = "main.js"></script>
 </body>
 </html>
