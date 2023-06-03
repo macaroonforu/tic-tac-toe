@@ -34,7 +34,7 @@ function reset(e){
     currentPlayerIndex=0; 
     let gameBoard = document.querySelector(".boardContainer"); 
     gameBoard.innerHTML=''; 
-    document.querySelector(".selectionContainer").style.display='block';
+    document.querySelector(".selectionContainer").style.display='flex';
     let result = document.querySelector(".result"); 
     result.style.display = 'none'; 
     initializeBoard();
@@ -96,11 +96,26 @@ function initializePlayers(e){
     const playerTwo = playerFactory("Player Two", `/assets/${p2value}.png`); 
     players.push(playerOne); 
     players.push(playerTwo); 
-    document.querySelector(".selectionContainer").style.display='none'; 
-    squares = document.querySelector(".Board").childNodes;  
+    
+    document.querySelector(".selectionContainer").style.display = 'none'; 
+    let squares = document.querySelector(".Board").childNodes;  
     for(let i=0; i<9; i++){
         squares[i].addEventListener("click", playMove); 
     }  
 }
 initializeBoard(); 
 
+
+/*
+    let hides = document.querySelectorAll(".hide"); 
+    
+    for(let i=0; i<hides.length; i++){
+        hides[i].style.display = 'none'; 
+    }
+    
+        let p1title = document.getElementById("p1title"); 
+    let p2title = document.getElementById("p2title"); 
+    p1title.textContent = `Player One: ${p1value}`; 
+    p2title.textContent = `Player Two: ${p2value}`;
+
+*/
