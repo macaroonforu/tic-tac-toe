@@ -92,8 +92,8 @@ function initializePlayers(e){
     const p1value = p1Menu.children[p1Menu.selectedIndex].value; 
     const p2Menu = document.getElementById("p2"); 
     const p2value = p2Menu.children[p2Menu.selectedIndex].value; 
-    const playerOne = playerFactory("Player One", `/assets/${p1value}.png`);
-    const playerTwo = playerFactory("Player Two", `/assets/${p2value}.png`); 
+    const playerOne = playerFactory("Player One", `./assets/${p1value}.png`);
+    const playerTwo = playerFactory("Player Two", `./assets/${p2value}.png`); 
     players.push(playerOne); 
     players.push(playerTwo); 
     
