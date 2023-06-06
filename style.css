@@ -17,6 +17,7 @@
     display: flex; 
     justify-content: center;  
     align-items: center; 
+    gap: 10px; 
 }
 
 .begin{
@@ -64,6 +65,10 @@
     }
 }
 
+body{
+    background-color: #fffd74; 
+}
+
 .Board{
     display: grid; 
     grid-template-columns: repeat(3, minmax(0, 1fr)); 
@@ -79,14 +84,55 @@
     align-items: center; 
 }
 
+#p1title,  #p2title{
+    font-family: 'Henny Penny', cursive;
+}
+
 h1{
     text-align: center; 
+    font-family: 'Henny Penny', cursive;
+    font-size: 2.5rem; 
 }
 
 p{
     font-weight: bold; 
 }
 
+button{
+    background-color: salmon; 
+    border-radius: 20px; 
+    font-family: 'Henny Penny', cursive; 
+    padding: 20px; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+button:hover{
+    font-size: 2rem; 
+}
+
+select{
+    border-radius: 20px; 
+    width: 100px; 
+    text-align: center; 
+    font-family: 'Henny Penny', cursive; 
+    border: solid; 
+    background-color: lavender; 
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+
+select:hover{
+    background-color: greenyellow
+}
+option:hover{
+    background-color: purple; 
+}
+
+.result{
+    font-family: 'Henny Penny', cursive;
+    font-size: 2rem;  
+}
 .img{
     height: 100%; 
     width: 100%; 
