@@ -13,7 +13,8 @@
 
 A small game that allows two players to play a game of tic-tac-toe with eachother, and choose icons for playing. 
 
-![ttt](https://github.com/macaroonforu/tic-tac-toe/assets/121368271/ea135e41-ca01-4fbf-81e0-3e294d577a44)
-
+<div  align=center>
+	<img src="https://github.com/macaroonforu/tic-tac-toe/assets/121368271/03e77963-7e5e-4d40-b559-9b8eb920fa46">
+</div>
 
 
