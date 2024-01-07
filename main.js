@@ -41,11 +41,11 @@ function reset(e){
 }
 
 function playMove(e){
+    e.srcElement.parentElement.removeEventListener("click", playMove); 
     index = e.srcElement.parentElement.id; 
     board[index]= players[currentPlayerIndex].icon;  
     console.log(players[currentPlayerIndex]); 
     e.srcElement.setAttribute("src", `${players[currentPlayerIndex].icon}`); 
-    e.srcElement.removeEventListener("click", playMove); 
     e.srcElement.classList.add("Pressed"); 
     if(
     (board[0]==board[1] && board[1]==board[2] && board[1]!=0)||
@@ -56,8 +56,7 @@ function playMove(e){
     (board[0]==board[3] && board[3]==board[6] && board[3]!=0)||
     (board[1]==board[4] && board[4]==board[7] && board[4]!=0)||
     (board[2]==board[5] && board[5]==board[8] && board[5]!=0)
-    )
-    {
+    ){
         let squares = document.querySelector(".Board").childNodes; 
         for(let i=0; i<9; i++){
             squares[i].removeEventListener("click", playMove); 
@@ -104,18 +103,3 @@ function initializePlayers(e){
     }  
 }
 initializeBoard(); 
-
-
-/*
-    let hides = document.querySelectorAll(".hide"); 
-    
-    for(let i=0; i<hides.length; i++){
-        hides[i].style.display = 'none'; 
-    }
-    
-        let p1title = document.getElementById("p1title"); 
-    let p2title = document.getElementById("p2title"); 
-    p1title.textContent = `Player One: ${p1value}`; 
-    p2title.textContent = `Player Two: ${p2value}`;
-
-*/
